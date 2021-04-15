@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="options.css"/>
+  </head>
+
+  <body>
+    <form>
+      <div class="form_row">
+        <label>Url:</label>
+        <input type="text" id="serverUrl" required="" pattern="^http[s]?://[0-9a-zA-Z_.:/-]+$" />
+      </div>
+      <div class="form_row">
+        <label>Token:</label>
+        <input type="text" id="authToken" required  pattern="^[0-9a-zA-Z_]{20,}$" / >
+      </div>
+      <button type="submit" disabled="">Save</button>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+	"name" : "CSoft PO Validator",
+	"description" : "CSoft PO Validator",
+	"version" : "1.0",
+	"manifest_version" : 2,
+	"content_scripts" : [
+		{
+			"matches":["https://ubrta.csoftintl.com/*"],
+			"js" : ["jquery.min.js","script.js"],
+			"css": ["custom.css"],
+			"run_at" : "document_end"
+		}
+	],
+	
+	"options_ui": {
+    "page": "options.html"
+  	},
+
+	"permissions": [
+		"<all_urls>",
+		"storage"
+	],
+
+	"browser_specific_settings": {
+    "gecko": {
+      "id": "{67bb8cc2-992a-11eb-a8b3-0242ac130003}"
+    }
+  }
+    	
+}

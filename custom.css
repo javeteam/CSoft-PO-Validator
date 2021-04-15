@@ -1,0 +1,66 @@
+.status_block{
+  position: fixed;
+  z-index: 10000;
+  right: 50px;
+  top: 50px;
+  color: black;
+  font-weight: bold;
+  background-color: rgba(255,0,0,0.7);
+  padding: 10px 25px;
+}
+
+.processed_item{
+	color: black;
+}
+
+.processed_item a{
+	color: black;
+}
+
+.exclusive_client_po{
+	background-color: #ffd700;
+}
+
+.project_description{
+	max-width: 200px;
+	padding: 0 5px;
+	word-wrap: break-word;
+}
+
+.incorrect_client_po{
+	background-color: red;
+}
+
+
+.exclusive_xtrf_po{
+	background-color: #f9fbfa;
+}
+
+.can_be_accepted{
+	background-color: #63a800;
+}
+
+.hide_unprocessed, .show_unprocessed{
+	color: #353535;
+}
+
+.hide_unprocessed:hover, .show_unprocessed:hover{
+	cursor: pointer;
+	color: black;
+}
+
+.opt_active .hide_unprocessed{
+	display: none;
+}
+
+.opt_active .show_unprocessed{
+	display: inline !important;
+}
+
+.show_unprocessed{
+	display: none;
+}
+
+.opt_selector{
+	background-color: wheat;
+}
